@@ -1,0 +1,97 @@
+body{
+    margin: 0px;
+    padding: 0PX;
+    text-transform: uppercase;
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: cadetblue;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header *{
+    margin: 3px;
+}
+
+#divider{
+    display: flex;
+    justify-content: space-evenly;
+    height: 4vh;
+    align-content: center;
+}
+
+#divider *{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    color: cadetblue;
+    font-weight: 700;
+}
+
+button{
+    background-color: transparent;
+    border: transparent;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.05em;
+    font-weight: 500;
+    text-transform: uppercase;
+    height: 100%;    
+}
+
+#result{
+    padding-top: 0.4vh;
+}
+
+.lvl{
+    padding: 0px 4px !important;
+}
+
+#body{
+    background-color: #333;
+    min-height: 66%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(75px, 150px));
+    grid-template-rows: repeat(2, minmax(75px, 150px));
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    flex-grow: 6;
+}
+
+.colorButtons{
+    background-color: turquoise;
+    border-radius: 20px;
+}
+
+.active{
+    background-color : cadetblue;
+    color:white !important;
+}
+
+
+@keyframes hide {
+    from{
+        opacity: 100;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+
+
+@media screen and (max-width:470px) {
+    #body{
+        grid-template-columns: repeat(auto-fit, minmax(75px, 150px));
+        grid-template-rows: repeat(auto-fit, minmax(75px, 150px));
+    }
+}
